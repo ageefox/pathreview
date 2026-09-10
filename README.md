@@ -1,5 +1,17 @@
 # PathReview
 
+## About this fork
+
+This fork contains my contribution to PathReview for a CodePath course project. I fixed an ineffective prompt snapshot test by adding a separate SHA-256 snapshot for each template version and checking that the snapshot inventory stays in sync with the templates.
+
+- [Upstream issue #37](https://github.com/ascherj/pathreview/issues/37)
+- [Submitted pull request #769](https://github.com/ascherj/pathreview/pull/769)
+- Verification: 42 focused tests pass, and a deliberate prompt edit triggers the expected snapshot failure.
+
+The application described below is the upstream teaching project. My contribution is limited to the prompt-template regression tests linked above.
+
+## Upstream project
+
 **AI-powered portfolio review assistant** that helps early-career developers strengthen their professional portfolios.
 
 PathReview analyzes GitHub profiles, resumes, and project repositories to generate structured, actionable feedback on portfolio completeness, project quality, skill gaps, and presentation improvements.
